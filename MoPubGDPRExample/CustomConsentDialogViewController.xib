@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomConsentDialogViewController" customModule="MoPubGDPRExample" customModuleProvider="target">
+            <connections>
+                <outlet property="gdprFooterLabel" destination="S1C-2x-nif" id="rE4-pS-ggS"/>
+                <outlet property="gdprMainLabel" destination="4jn-sd-pve" id="TOk-d0-JZz"/>
+                <outlet property="gdprNoteLabel" destination="nA4-8u-l3w" id="RWY-LX-1lg"/>
+                <outlet property="gdprTitleLabel" destination="bFS-fv-orn" id="XcT-P9-YDQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jn-sd-pve">
+                    <rect key="frame" x="20" y="96.000000000000014" width="335" height="210.33333333333337"/>
+                    <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nA4-8u-l3w">
+                    <rect key="frame" x="20" y="321.33333333333331" width="335" height="76.666666666666686"/>
+                    <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</string>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="6dM-dh-MDT">
+                    <rect key="frame" x="32.666666666666657" y="680" width="310" height="54"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szy-NI-NJo">
+                            <rect key="frame" x="0.0" y="0.0" width="128" height="54"/>
+                            <color key="backgroundColor" red="0.61960784310000006" green="0.10980392160000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <inset key="contentEdgeInsets" minX="20" minY="18" maxX="20" maxY="18"/>
+                            <state key="normal" title="Yes, I agree.">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="gdprAgreeBtn:" destination="-1" eventType="touchUpInside" id="iFR-IU-vGz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzY-Mu-aRl">
+                            <rect key="frame" x="171" y="0.0" width="139" height="54"/>
+                            <color key="backgroundColor" red="0.61960784310000006" green="0.10980392160000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <inset key="contentEdgeInsets" minX="20" minY="18" maxX="20" maxY="18"/>
+                            <state key="normal" title="No thank you.">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="gdprDisagreeBtn:" destination="-1" eventType="touchUpInside" id="Fs0-sa-JpA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="GKW-bj-qsb"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1C-2x-nif">
+                    <rect key="frame" x="20" y="742" width="335" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFS-fv-orn">
+                    <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                    <color key="backgroundColor" red="0.61960784310000006" green="0.10980392160000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="cEG-w9-byv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.73725490199999999" green="0.12941176469999999" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="S1C-2x-nif" secondAttribute="trailing" constant="20" id="2XL-SX-xde"/>
+                <constraint firstItem="6dM-dh-MDT" firstAttribute="centerX" secondItem="4jn-sd-pve" secondAttribute="centerX" id="DwF-te-ZHU"/>
+                <constraint firstItem="6dM-dh-MDT" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="I2n-6r-i6a"/>
+                <constraint firstItem="nA4-8u-l3w" firstAttribute="top" secondItem="4jn-sd-pve" secondAttribute="bottom" constant="15" id="Jzm-o0-W8F"/>
+                <constraint firstItem="bFS-fv-orn" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Kir-64-rto"/>
+                <constraint firstItem="6dM-dh-MDT" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nA4-8u-l3w" secondAttribute="bottom" priority="250" constant="8" id="N65-UB-0qJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4jn-sd-pve" secondAttribute="trailing" constant="20" id="flU-ZB-wyb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nA4-8u-l3w" secondAttribute="trailing" constant="20" id="hNG-z6-AsC"/>
+                <constraint firstItem="S1C-2x-nif" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-34" id="ifS-6c-pjf"/>
+                <constraint firstItem="4jn-sd-pve" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="iqm-jt-Kas"/>
+                <constraint firstItem="nA4-8u-l3w" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="kDT-pY-fnj"/>
+                <constraint firstItem="S1C-2x-nif" firstAttribute="top" secondItem="6dM-dh-MDT" secondAttribute="bottom" constant="8" id="nV7-Y6-83J"/>
+                <constraint firstItem="bFS-fv-orn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="si7-1l-HMi"/>
+                <constraint firstItem="bFS-fv-orn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="vHq-Jw-8kR"/>
+                <constraint firstItem="S1C-2x-nif" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="wW3-YP-Dgi"/>
+                <constraint firstItem="4jn-sd-pve" firstAttribute="top" secondItem="bFS-fv-orn" secondAttribute="bottom" constant="8" id="xl1-4O-oWS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="136.80000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+</document>
